@@ -2,9 +2,9 @@
 /**
  * digital-screen Functions
  *
- * @category digital-screen
+ * @category digital-clock
  * @package digital-screen.h
- * @copyright Copyright (c) 2019 EEENeko (https://github.com/eeeneko)
+ * @copyright Copyright (c) 2019 iotcat (https://iotcat.me)
  * @license GNU General Public License 2.0
  * @version 0.0.1
  */
@@ -14,6 +14,10 @@
 #define _DIGITAL_SCREEN_H
 
 #include "ovo.h"
+
+#ifndef INTERVAL_TIME
+#define INTERVAL_TIME 1000
+#endif
 
 
 #ifndef DIG_1_1
@@ -47,7 +51,6 @@
 #ifndef DIG_2_4
 #define DIG_2_4 8
 #endif
-
 
 class DigitalClock{
 
@@ -88,7 +91,7 @@ public:
         setInterval([&](){
             this->digital_show(this->_cnt % this->_group);
             this->_cnt++;
-        }, 1000);
+        }, INTERVAL_TIME);
     }
 
     inline void hide(){
