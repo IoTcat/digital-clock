@@ -10,7 +10,38 @@
  
 ## 快速开始
  - 用Arduino IDE打开digital-clock.ino文件
- - 根据需求编辑`修改初始参数`部分
+ - 根据需求编辑`定义初始参数`部分
  - 代码其它部分如不明白请**不要改动**
+ - 之后正常编译上传即可
 
+## 参数说明
+代码注释比较详细，我直接copy过来如下
+````C++
+/*** 定义初始参数 ****/
+
+//小组组号
+#define GROUP_ID 22 //计时器增大到此值将重新从零开始
+
+//时钟变换时间间隔 (毫秒)
+#define INTERVAL_TIME 1000 //默认是1秒
+
+//pin口 - 接译码器1 (显示个位)
+#define DIG_1_1 9   //A
+#define DIG_1_2 10  //B
+#define DIG_1_3 11  //C
+#define DIG_1_4 12  //D
+
+//pin口 - 接译码器2 (显示十位)
+#define DIG_2_1 5   //A
+#define DIG_2_2 6   //B
+#define DIG_2_3 7   //C
+#define DIG_2_4 8   //D
+
+//pin口 - 接开关
+#define SWI_OFF 3
+
+//pin口 - 接reset键
+#define SWI_RESET 4
+
+````
 
