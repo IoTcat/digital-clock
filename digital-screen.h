@@ -89,7 +89,7 @@ public:
     void core(){
 
         setInterval([&](){
-            this->digital_show(this->_cnt % this->_group);
+            this->digital_show(this->_cnt % (this->_group + 1));
             this->_cnt++;
         }, INTERVAL_TIME);
     }
