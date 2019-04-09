@@ -15,6 +15,8 @@
 ### 电路实物图
 请参考以下图片搭建你的电路！
 ![One Demo of Circuit](./circuit_pic.jpg)
+### Arduino Nano推荐连法
+![Arduino Nano](./nano_pic.jpg)
 
 ### 译码器连法
 译码器与显示器连法(由[番茄树](https://tomatotrees.xyz)同学提供)
@@ -23,6 +25,7 @@
 ## 快速开始
  - 用Arduino IDE打开digital-clock.ino文件
  - 根据需求编辑`定义初始参数`部分
+ - 请不要使用Arduino Nano的D0，D1，D2端口!!
  - 代码其它部分如不明白请**不要改动**
  - 之后正常编译上传即可
  - 如果上传后你的时钟正常运行，那么恭喜你。否则，请参考下文方法。
@@ -84,7 +87,7 @@
 使用debug模式排查线路连接问题！
 
 ### 暂停键没有反应
-答：请使用debug模式，观察按下开关时arduino板载led是否亮。
+答：请使用debug模式，观察按下开关时arduino板载led是否亮。详情见上文**错误排查**部分。
 
 ### 显示屏个位与十位错位
 答：两个译码器接反了。换过来即可。
