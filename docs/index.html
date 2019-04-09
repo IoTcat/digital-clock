@@ -1,91 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <title>Digital Clock</title>
-  <link rel="icon" href="https://cdn.yimian.xyz/img/logo/logo.ico">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="keywords" content="digital,clock,eee116,assignment,xjtlu">
-  <meta name="description" content="A Digital Clock Instruction.">
+  <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css" title="vue">
-  <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/dark.css" title="dark" disabled>
-  <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/buble.css" title="buble" disabled>
-  <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/pure.css" title="pure" disabled>
-  <script src="//unpkg.com/docsify-plugin-codefund/index.js"></script>
-  <style>
-    nav.app-nav li ul {
-      min-width: 100px;
-    }
-  </style>
-</head>
-
+  <link rel="icon" type="image/ico" href="https://cdn.yimian.xyz/img/logo/logo.ico">
+  <link href="./vue.css" rel="stylesheet">
+  </head>
 <body>
-  <div id="app">Loading ...</div>
-  <script>
-    window.$docsify = {
-      alias: {
-
-      },
-      auto2top: true,
-      coverpage: true,
-      executeScript: true,
-      loadSidebar: true,
-      loadNavbar: true,
-      mergeNavbar: true,
-      maxLevel: 4,
-      subMaxLevel: 2,
-      ga: '',
-      name: '',
-      search: {
-        noData: {
-          '/de-de/': 'Keine Ergebnisse!',
-          '/zh-cn/': '没有结果!',
-          '/': 'No results!'
-        },
-        paths: 'auto',
-        placeholder: {
-          '/de-de/': 'Suche',
-          '/zh-cn/': '搜索',
-          '/': 'Search'
-        }
-      },
-      formatUpdated: '{MM}/{DD} {HH}:{mm}',
-      plugins: [
-        function (hook, vm) {
-          hook.beforeEach(function (html) {
-            if (/githubusercontent\.com/.test(vm.route.file)) {
-              url = vm.route.file
-                .replace('raw.githubusercontent.com', 'github.com')
-                .replace(/\/master/, '/blob/master')
-            } else {
-              url = 'https://github.com/docsifyjs/docsify/blob/master/docs/' + vm.route.file
-            }
-            var editHtml = '[:memo: Edit Document](' + url + ')\n'
-            return editHtml
-              + html
-              + '\n\n----\n\n'
-              + '<a href="https://docsify.js.org" target="_blank" style="color: inherit; font-weight: normal; text-decoration: none;">Powered by docsify</a>'
-          })
-        },
-        DocsifyCodefund.create('fae1f9a4-870c-4c25-b8e0-c80464f7a95c')
-      ]
-    }
-  </script>
-  <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
-  <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
-  <script src="//unpkg.com/docsify/lib/plugins/ga.min.js"></script>
-  <script src="//unpkg.com/prismjs/components/prism-bash.min.js"></script>
-  <script src="//unpkg.com/prismjs/components/prism-markdown.min.js"></script>
-  <script src="//unpkg.com/prismjs/components/prism-nginx.min.js"></script>
-  
-  <script>
-  ((window.gitter = {}).chat = {}).options = {
-    room: 'docsifyjs/Lobby'
-  };
-  </script>
-  <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+  <div id="app">加载中……</div>
 </body>
+<script>
+  window.$docsify = {
+      homepage: 'README.md',
+      coverpage: true,
+      subMaxLevel: 9999,
+      name: 'Digital Clock',
+      nameLink: {
+      '/': '/#/'
+      },
+      loadSidebar: true,
+      autoHeader: true,
+      auto2top: true,
+      repo: 'iotcat/digital-clock',
+      search: {
+        paths: 'auto',
+        placeholder: '输入关键字，快速寻找答案 🔍',
+        noData: 'No Results! 😞',
+        depth: 6,
+    }
+  }
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/docsify/4.9.1/docsify.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/docsify/4.9.1/plugins/search.min.js"></script>
+
 
 </html>
