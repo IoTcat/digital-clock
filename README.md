@@ -10,22 +10,23 @@
  
 ## 相关资料
 ### 效果图
-![Demo_effect](./demo.gif)
+![Demo_effect](./pic/demo.gif)
 ### 电路实物图
 请参考以下图片搭建你的电路！
-![One Demo of Circuit](./circuit_pic.jpg)
+![One Demo of Circuit](./pic/circuit_pic.jpg)
 ### Arduino Nano推荐连法
-![Arduino Nano](./nano_pic.jpg)
+![Arduino Nano](./pic/nano_pic.jpg)
 
 ### 译码器连法
 译码器与显示器连法(由[番茄树](https://tomatotrees.xyz)同学提供)
-![Circuit of dicoder and screen](./circuit-for-decoder.png)
+![Circuit of dicoder and screen](./pic/circuit-for-decoder.png)
+更多资料请查看附录[译码器电路示意图](#译码器电路示意图)
  
 ### 开关电路说明
  - 说三遍：**开关是有方向的，开关是有方向的，开关是有方向的**
  - 请务必保证开关上**有突起**的一面**朝左**
  - 开关的具体接法可参考以下两张图
- ![swi pic up](./swi_pic_up.jpg)  ![swi pic down](./swi_pic_down.jpg)
+ ![swi pic up](./pic/swi_pic_up.jpg)  ![swi pic down](./pic/swi_pic_down.jpg)
  - 在参考接法中，左边的开关用于**暂停**，右边的开关用于**重置**
 
  
@@ -39,7 +40,7 @@
  
  ## 错误排查
  1. **去掉**代码开头`//#define DEBUG_MODE`的注释，编译并上传，进入**debug模式**
- 2. 检查你的两个数字屏是否**同时**按照0-9的顺序循环跳动。如果出现个别数字是乱码，请检查**译码器到数字屏的线路**。
+ 2. 检查你的两个数字屏是否**同时**按照0-9的顺序循环跳动。如果出现个别数字是乱码，请检查**译码器到数字屏的线路**。参考：[译码器连法](#译码器连法),[译码器电路示意图](#译码器电路示意图), [数字屏电路示意图](#数字屏电路示意图)
  3. 分别长按两个按钮开关，观察arduino板最左边的板载led是否亮起。如果板载led常亮，请检查你的两个[开关线路](#开关电路说明)，保证当开关按下时，输出为高电平。
  4. 如果上述测试均通过，请**重新注释**`#define DEBUG_MODE`，编译并上传
  5. **如果你的问题仍无法解决，请参考下文[Q&A](#Q--A)**
@@ -91,7 +92,7 @@
 
 ### 数字时钟显示乱码
 答：请先检查**译码器与arduino的线路**连接是否正确！！(大部分同学问题都出在这里)<br/>
-请务必保证译码器的 A,B,C,D脚(见上文相关资料->译码器连法)正确地连接到代码中你自定义的pin脚(默认为9,10,11,12和5,6,7,8)<br/>
+请务必保证译码器的 A,B,C,D脚(参考：[译码器连法](#译码器连法),[译码器电路示意图](#译码器电路示意图), [数字屏电路示意图](#数字屏电路示意图))正确地连接到代码中你自定义的pin脚(默认为9,10,11,12和5,6,7,8)<br/>
 使用[debug模式](#错误排查)排查线路连接问题！
 
 ### 暂停键没有反应
@@ -117,18 +118,22 @@
 自豪地引用[**ovo.h**](https://github.com/eeeneko/arduino-ovo)搭建非阻塞Arduino程序框架！
 
 ## 我要参与
-如果你希望和我们一起完善本代码，请在评论中反馈你遇到的问题！
+如果你认为本项目对你有帮助，请到本页最上方star本项目<br/>
+如果你希望和我们一起完善本代码，请通过[邮箱联系我](mailto:i@iotcat.me)！
 
-## 附录 - 更加具体的电路图片
+## 开源协议
+本项目使用[GNU General Public License v3.0](./LICENSE)开源协议！
+
+## 附录 - 更多参考电路图片
 
 ### 全局电路鸟瞰图
-![circuit_overall](./circuit_overall.jpg)
+![circuit_overall](./pic/circuit_overall.jpg)
 
 ### 译码器电路示意图
-![decoder_up](./decoder_up.jpg)
-![decoder_down](./decoder_down.jpg)
+![decoder_up](./pic/decoder_up.jpg)
+![decoder_down](./pic/decoder_down.jpg)
 
 ### 数字屏电路示意图
-![screen_left](./screen_left.jpg)
-![screen_right](./screen_right.jpg)
+![screen_left](./pic/screen_left.jpg)
+![screen_right](./pic/screen_right.jpg)
 
