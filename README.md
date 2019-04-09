@@ -45,6 +45,9 @@
 #define SWI_RESET 4
 
 ````
+## 其它资料
+译码器与显示器连法(由[番茄树](https://tomatotrees.xyz)同学提供)
+![Circuit of dicoder and screen](./circuit-for-decoder.png)
 
 ## 背景资料
 自豪地引用[**ovo.h**](https://github.com/eeeneko/arduino-ovo)搭建非阻塞Arduino程序框架！
