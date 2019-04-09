@@ -83,11 +83,11 @@ void loop(){
       swi.changeStatus();
     }
 
-    //如果开关打开，则停止计时
+    //如果开关打开，则开始或停止计时
     if(swi.getStatus() == true) clock.show();
     else clock.hide();
 
-  Serial.println(swi.getStatus());
+
     /*** 守护进程 ****/
     clock.core();
     swi.core();
