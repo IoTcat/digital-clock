@@ -1,28 +1,23 @@
 - 开始使用
+  - <li ><a style="color:red" href="#/before">先觉条件</a></li>
+  - [相关资料](/instro)
   - [快速开始](/start)
-  - [插件设置](/plugin)
-  - <li ><a style="color:red" href="#/common-problem">常见问题</a></li>
-  - [从微信公众号发送时光机](/wechat)
+  - [参数说明](/params)
 
-- 进阶设定
-  - [相册](/album)
-  - [RSS 配置](/rss)
-  - [独立页面](/page)
-  - [评论系统](/comment)
-  - <li><a style="color:red" href="#/functions">增强功能</a></li>
-  - [评论表情](/emotion)
-  - [图标列表](/icons)
-  - [速度优化](/speed)
-  - [多语言设置](/i18n)
-  - [自定义栏目](/customize)
-  - [自定义pjax动画](/pjaxanimate)
-  - [~~主题增强包~~](/enhancedPackage)
-  - [个性化修改](/customEdit)
-  - [typecho相关](/typecho)
+- 问题排查
+  - [错误排查](/debug)
+  - [Q&A](/qa)
+
 
 - 其他说明
-  - [开发日志](/changelog)
-  - [问题反馈](/feedback)
-  - [版权声明](/copyright)
+  - [已知bug](/bugs)
+  - [开发日志](/log)
+  - [开源协议](/opensource)
+  - [我要参与](/join)
+
+- 附录
+  - [全局电路鸟瞰图](/pic_overall)
+  - [译码器电路示意图](/pic_decoder)
+  - [数字屏电路示意图](/pic_screen)
 
 
