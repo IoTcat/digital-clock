@@ -11,7 +11,7 @@
  
 ## 相关资料
 ### 效果图
-
+![Demo_effect](./demo.gif)
 ### 电路实物图
 请参考以下图片搭建你的电路！
 ![One Demo of Circuit](./circuit_pic.jpg)
