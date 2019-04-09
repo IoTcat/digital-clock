@@ -2,15 +2,20 @@
 
 本项目旨在帮助同学们**快速**完成**EEE116**数字时钟的代码开发。
 
-## 先觉条件
+## 先觉条件(非常重要！！任何一条不满足你的代码就无法运行)
  - 新版Arduino可能无法运行，请使用1.8.5版本(下载地址：[win](https://cloud.yimian.xyz/install/arduino/1.8.5/arduino-1.8.5-windows.zip) / [mac](https://cloud.yimian.xyz/install/arduino/1.8.5/arduino-1.8.5-macosx.zip))
  - 下载并解压代码到本地([代码下载戳这里](https://github.com/IoTcat/digital-clock/archive/master.zip))
  - **请务必先解压，否则代码无法运行**
  - 请保证包含代码文件的文件夹名称为`digital-clock`
  - 请保证你的两个开关线路使用**上拉电阻**，即按下时output输出高电压
+ 
 ## 相关资料
 ### 效果图
+
+### 电路实物图
+请参考以下图片搭建你的电路！
 ![One Demo of Circuit](./circuit_pic.jpg)
+
 ### 译码器连法
 译码器与显示器连法(由[番茄树](https://tomatotrees.xyz)同学提供)
 ![Circuit of dicoder and screen](./circuit-for-decoder.png)
@@ -53,30 +58,42 @@
 
 ````
 
-## 背景资料
-自豪地引用[**ovo.h**](https://github.com/eeeneko/arduino-ovo)搭建非阻塞Arduino程序框架！
-
 ## 已知bug
- - [] 部分nano板
- - [] 部分按钮开关需要长按才能识别
+ - [ ] 部分按钮开关需要长按才能识别
  - [x] reset键不灵敏
- - [x]
 
 ## Q & A
-### 代码编译出现错误找不到`ovo.h`等
+### 代码编译出现错误找不到*ovo.h*等
 答：请保证压缩包中所有文件均在一个名为`digital-clock`的文件夹中！！之后通过arduino打开此文件夹中的digital-clock.ino即可。
 
-### 编译错误中出现关键词`auto`
+### 编译错误中出现关键词*auto*
 答：请确保你的arduino为1.8.5版本！！(下载地址：[win](https://cloud.yimian.xyz/install/arduino/1.8.5/arduino-1.8.5-windows.zip) / [mac](https://cloud.yimian.xyz/install/arduino/1.8.5/arduino-1.8.5-macosx.zip))
 
-### 上传错误`avrdude: ser_open(): can't open device`
+### 上传错误*avrdude: ser_open(): can't open device*
 答：请在上方**工具**中选择指定**端口**。
 
-### 上传错误`avrdude: stk500_recv(): programmer is not responding`
+### 上传错误*avrdude: stk500_recv(): programmer is not responding*
 答：此错误由先前对端口的非正常操作引起。请尝试**重启系统**或**更换电脑**解决。
+
+### 数字时钟显示乱码
+答：请先检查译码器与arduino的线路连接是否正确！！(大部分同学问题都出在这里)<br/>
+请务必保证译码器的 A,B,C,D脚(见上文相关资料->译码器连法)正确地连接到代码中你自定义的pin脚(默认为9,10,11,12和5,6,7,8)<br/>
+使用debug模式排查线路连接问题！
+
+### 暂停键没有反应
+答：请使用debug模式，观察按下开关时arduino板载led是否亮。
+
+### 显示屏个位与十位错位
+答：两个译码器接反了。换过来即可。
 
 ## 更新日志
 ### 2019/4/9
  - 修复reset按钮不灵敏的bug
  - 修复时钟显示问题
 
+
+## 背景资料
+自豪地引用[**ovo.h**](https://github.com/eeeneko/arduino-ovo)搭建非阻塞Arduino程序框架！
+
+## 我要参与
+如果你希望和我们一起完善本代码，请在评论中反馈你遇到的问题！
