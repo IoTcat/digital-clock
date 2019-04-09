@@ -13,7 +13,6 @@
 /*** 引入关键库 ****/
 #include "ovo.h"
 
-
 /*** 定义初始参数 ****/
 
 //小组组号
@@ -49,6 +48,7 @@
 #include "switch.h"
 
 
+
 /*** 运行初始化 ****/
 
 void setup(){
@@ -57,6 +57,8 @@ void setup(){
     digital_clock_ini();
     //开关组件初始化
     switch_ini();
+    //初始化串口,方便debug
+    Serial.begin(115200);
 }
 
 
@@ -76,13 +78,16 @@ void loop(){
     /*** 主要控制逻辑 ****/
 
     //如果reset键被按下，重置时钟
-    if(reset.isPressed() == true) clock.reset();
+    if(reset.isPressed() == true) {
+      clock.reset();
+      swi.changeStatus();
+    }
 
-    //如果开关打开，则显示时钟，否则不显示时钟
+    //如果开关打开，则停止计时
     if(swi.getStatus() == true) clock.show();
     else clock.hide();
 
-
+  Serial.println(swi.getStatus());
     /*** 守护进程 ****/
     clock.core();
     swi.core();

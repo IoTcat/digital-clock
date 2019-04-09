@@ -43,6 +43,10 @@ public:
         return _status;
     }
 
+    bool changeStatus(){
+        this->_status = !(this->_status);
+    }
+
     bool isPressed(){
         return _isPressed;
     }
@@ -70,9 +74,10 @@ private:
         set_isPressed();
 
         // 检测开关键松开动作
-        if(this->_isPressed != s_fIsPressed && this->_isPressed != _type){
+        if(this->_isPressed != s_fIsPressed /*&& this->_isPressed != _type*/){
 
             this->_status = !(this->_status);
+            delay(600);
         }
 
     }

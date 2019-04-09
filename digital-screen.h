@@ -75,8 +75,8 @@ public:
     inline void digital_show(int num){
 
         if(num == -1 || _ice == 1){
-            digital_show_1(15);
-            digital_show_2(15);
+            //digital_show_1(15);
+            //digital_show_2(15);
             return;
         }
 
@@ -90,7 +90,7 @@ public:
 
         setInterval([&](){
             this->digital_show(this->_cnt % (this->_group + 1));
-            this->_cnt++;
+            if(this->_ice != 1) this->_cnt++;
         }, INTERVAL_TIME);
     }
 
@@ -100,6 +100,10 @@ public:
 
     inline void show(){
         this->_ice = 0;
+    }
+
+    inline void change(){
+        this->_ice = !(this->_ice);
     }
 
     inline void reset(){
