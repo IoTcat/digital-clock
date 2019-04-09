@@ -17,10 +17,11 @@
 /*** 定义初始参数 ****/
 
 //小组组号
-#define GROUP_ID 22
+#define GROUP_ID 22 //计时器增大到此值将重新从零开始
+                    //例如此处我的组号是22
 
 //时钟变换时间间隔 (毫秒)
-#define INTERVAL_TIME 1000
+#define INTERVAL_TIME 1000 //默认是1秒
 
 //pin口 - 接译码器1 (显示个位)
 #define DIG_1_1 9   //A
