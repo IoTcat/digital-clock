@@ -1,1 +1,1 @@
-本项目使用[GNU General Public License v3.0](../LICENSE)开源协议！
+本项目使用[GNU General Public License v3.0](https://github.com/IoTcat/digital-clock/blob/master/LICENSE)开源协议！

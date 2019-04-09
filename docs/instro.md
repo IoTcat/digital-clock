@@ -9,7 +9,7 @@
 ### 译码器连法
 译码器与显示器连法(由[番茄树](https://tomatotrees.xyz)同学提供)
 ![Circuit of dicoder and screen](https://cloud.yimian.xyz/package/iotcat/digital-clock/pic/circuit-for-decoder.png)
-更多资料请查看附录[译码器电路示意图](#译码器电路示意图)
+更多资料请查看附录[译码器电路示意图](https://digitalclock.eee.dog/#/attach?id=译码器电路示意图)
  
 ### 开关电路说明
  - 说三遍：**开关是有方向的，开关是有方向的，开关是有方向的**
