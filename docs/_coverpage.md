@@ -1,7 +1,7 @@
-# Handsome Theme <small>5.1 Pro</small>
+# Digital Clock <small>for EEE116</small>
 
-界面一见倾心，功能满足幻想
+一见倾心，满足幻想
 
-[联系作者](https://www.ihewro.com/)
+[联系作者](https://www.eee.dog/)
 [开始使用](/start)
 
