@@ -13,7 +13,7 @@
 ![One Demo of Circuit](./circuit_pic.jpg)
 ### 译码器连法
 译码器与显示器连法(由[番茄树](https://tomatotrees.xyz)同学提供)
-![Circuit of dicoder and screen](./circuit-for-decoder.png)
+![Circuit of dicoder and screen](./circuit-for-decoder.jpg)
  
 ## 快速开始
  - 用Arduino IDE打开digital-clock.ino文件
