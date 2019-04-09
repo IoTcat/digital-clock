@@ -175,4 +175,106 @@ void digital_clock_ini(){
 
 
 
+#ifdef DEBUG_MODE
+
+class Debug_DigitalClock{
+
+public:
+
+    Debug_DigitalClock(int group = 22){
+
+        this->_group = group;
+        _ice = 0;
+        _cnt = 0;
+    };
+
+
+
+    /**
+     * control digital screens
+     *
+     * @Author yimian
+     * @param int num # 待显示数字
+     * @return void
+     */
+    inline void digital_show(int num){
+
+        if(num == -1 || _ice == 1){
+            //digital_show_1(15);
+            //digital_show_2(15);
+            return;
+        }
+
+        digital_show_1(num % 10);
+        digital_show_2(num % 10);
+    }
+
+
+
+    void core(){
+
+        setInterval([&](){
+            this->digital_show(this->_cnt % (this->_group + 1));
+            if(this->_ice != 1) this->_cnt++;
+        }, INTERVAL_TIME);
+    }
+
+    inline void hide(){
+        this->_ice = 1;
+    }
+
+    inline void show(){
+        this->_ice = 0;
+    }
+
+    inline void change(){
+        this->_ice = !(this->_ice);
+    }
+
+    inline void reset(){
+        this->_cnt = 0;
+    }
+
+private:
+
+    int _group;
+    int _ice;
+    unsigned int _cnt;
+
+    /**
+     * control digital screen 1
+     *
+     * @Author yimian
+     * @param int num # 待显示数字
+     * @return void
+     */
+    void digital_show_1(int num){
+
+        digitalWrite(DIG_1_1, !!(num & (0x01<<0)));
+        digitalWrite(DIG_1_2, !!(num & (0x01<<1)));
+        digitalWrite(DIG_1_3, !!(num & (0x01<<2)));
+        digitalWrite(DIG_1_4, !!(num & (0x01<<3)));
+    }
+
+
+    /**
+     * control digital screen 2
+     *
+     * @Author yimian
+     * @param int num # 待显示数字
+     * @return void
+     */
+    void digital_show_2(int num){
+
+        digitalWrite(DIG_2_1, !!(num & (0x01<<0)));
+        digitalWrite(DIG_2_2, !!(num & (0x01<<1)));
+        digitalWrite(DIG_2_3, !!(num & (0x01<<2)));
+        digitalWrite(DIG_2_4, !!(num & (0x01<<3)));
+    }
+
+
+};
+
+#endif
+
 #endif

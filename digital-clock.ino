@@ -13,6 +13,12 @@
 /*** 引入关键库 ****/
 #include "ovo.h"
 
+/*** 是否开启debug模式 ****/
+
+//去掉下一行的注释以开启debug模式
+//#define DEBUG_MODE
+
+
 /*** 定义初始参数 ****/
 
 //小组组号
@@ -59,24 +65,46 @@ void setup(){
     switch_ini();
     //初始化串口,方便debug
     Serial.begin(115200);
+#ifdef DEBUG_MODE
+    //初始化板载led,作为debug的指示灯
+    pinMode(LED_BUILTIN, OUTPUT);
+#endif
 }
 
 
 /*** 实例化组件 ****/
 
+#ifdef DEBUG_MODE
+
+//时钟显示屏实例化
+Debug_DigitalClock clock(GROUP_ID);
+
+
+#else
+
 //时钟显示屏实例化
 DigitalClock clock(GROUP_ID);
+
+#endif
+
 //开关组件实例化
 Switch swi(SWI_OFF), reset(SWI_RESET);
-
-
 
 /*** 主循环程序 ****/
 
 void loop(){
 
     /*** 主要控制逻辑 ****/
+#ifdef DEBUG_MODE
 
+    //如果reset键或开关键被按下，板载led亮
+    if(reset.isPressed() == true || swi.isPressed() == true) {
+        digitalWrite(LED_BUILTIN, HIGH);
+    }else{
+        digitalWrite(LED_BUILTIN, LOW);
+    }
+
+#else
     //如果reset键被按下，重置时钟
     if(reset.isPressed() == true) {
       clock.reset();
@@ -87,7 +115,7 @@ void loop(){
     //如果开关打开，则开始或停止计时
     if(swi.getStatus() == true) clock.show();
     else clock.hide();
-
+#endif
 
     /*** 守护进程 ****/
     clock.core();
