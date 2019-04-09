@@ -43,7 +43,11 @@ public:
         return _status;
     }
 
-    bool changeStatus(){
+    void changeStatus(int state){
+        if(state == 15){
+            this->_status = true;
+            return;
+        }
         this->_status = !(this->_status);
     }
 

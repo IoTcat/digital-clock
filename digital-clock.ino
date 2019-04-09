@@ -80,7 +80,8 @@ void loop(){
     //如果reset键被按下，重置时钟
     if(reset.isPressed() == true) {
       clock.reset();
-      swi.changeStatus();
+      swi.changeStatus(15);
+      reset.changeStatus(1);
     }
 
     //如果开关打开，则开始或停止计时
