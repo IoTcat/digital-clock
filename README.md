@@ -1,6 +1,7 @@
 # digital-clock
 
-本项目旨在帮助同学们**快速**完成**EEE116**数字时钟的代码开发。
+本项目旨在帮助同学们**快速**完成**EEE116**数字时钟的代码开发。<br/>
+[开发文档在这里](https://digitalclock.eee.dog)
 
 ## 先觉条件(非常重要！！任何一条不满足你的代码就无法运行)
  - 新版Arduino可能无法运行，请使用1.8.5版本(下载地址：[win](https://cloud.yimian.xyz/install/arduino/1.8.5/arduino-1.8.5-windows.zip) / [mac](https://cloud.yimian.xyz/install/arduino/1.8.5/arduino-1.8.5-macosx.zip))
