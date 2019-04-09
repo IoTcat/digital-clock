@@ -118,3 +118,17 @@
 
 ## 我要参与
 如果你希望和我们一起完善本代码，请在评论中反馈你遇到的问题！
+
+## 附录 - 更加具体的电路图片
+
+### 全局电路鸟瞰图
+![circuit_overall](./circuit_overall.jpg)
+
+### 译码器电路示意图
+![decoder_up](./decoder_up.jpg)
+![decoder_down](./decoder_down.jpg)
+
+### 数字屏电路示意图
+![screen_left](./screen_left.jpg)
+![screen_right](./screen_right.jpg)
+
