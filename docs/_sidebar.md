@@ -6,7 +6,7 @@
 
 - 问题排查
   - [错误排查](/debug)
-  - [Q&A](/qa)
+  - <li ><a style="color:red" href="#/qa">Q&A</a></li>
 
 
 - 其他说明
@@ -15,9 +15,6 @@
   - [开源协议](/opensource)
   - [我要参与](/join)
 
-- 附录
-  - [全局电路鸟瞰图](/pic_overall)
-  - [译码器电路示意图](/pic_decoder)
-  - [数字屏电路示意图](/pic_screen)
+- [附录](/attach)
 
 
