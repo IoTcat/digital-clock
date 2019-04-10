@@ -8,6 +8,7 @@
 
 ### 译码器连法
 > 译码器与显示器连法(由[番茄树](https://tomatotrees.xyz)同学提供)
+
  - 推荐使用**D9,D10,D11,D12分别连接右边译码器的A,B,C,D**
  - 推荐使用**D5,D6,D7,D8分别接左边译码器A,B,C,D**
 ![Circuit of dicoder and screen](https://cloud.yimian.xyz/package/iotcat/digital-clock/pic/circuit-for-decoder.png)
