@@ -3,5 +3,5 @@
 一见倾心，满足幻想
 
 [联系作者](https://www.eee.dog/)
-[开始使用](/start)
+[开始使用](/before)
 
