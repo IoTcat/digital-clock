@@ -12,7 +12,7 @@
 
 ### 数字时钟显示乱码
 答：请先检查**译码器与arduino的线路**连接是否正确！！(大部分同学问题都出在这里)<br/>
-请务必保证译码器的 A,B,C,D脚(参考：[译码器连法](#/instro?id=译码器连法),[译码器电路示意图](https://digitalclock.eee.dog/#/attach?id=译码器电路示意图), [数字屏电路示意图](https://digitalclock.eee.dog/#/attach?id=数字屏电路示意图))正确地连接到代码中你自定义的pin脚(默认为9,10,11,12和5,6,7,8)<br/>
+请务必保证译码器的 A,B,C,D脚(参考：[译码器连法](/instro),[译码器电路示意图](https://digitalclock.eee.dog/#/attach?id=译码器电路示意图), [数字屏电路示意图](https://digitalclock.eee.dog/#/attach?id=数字屏电路示意图))正确地连接到代码中你自定义的pin脚(默认为9,10,11,12和5,6,7,8)<br/>
 使用[debug模式](https://digitalclock.eee.dog/#/debug)排查线路连接问题！
 
 ### 暂停键没有反应
