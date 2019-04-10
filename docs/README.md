@@ -78,16 +78,16 @@
 ````
 
 ## Q&A
-### 代码编译出现错误找不到*ovo.h*等
+### 代码编译出现错误找不到`ovo.h`等
 答：请保证压缩包中**所有文件**均在一个名为`digital-clock`的文件夹中！！之后通过arduino打开此文件夹中的digital-clock.ino即可。
 
-### 编译错误中出现关键词*auto*
+### 编译错误中出现关键词`auto`
 答：请确保你的arduino为**1.8.5**版本！！(下载地址：[win](https://cloud.yimian.xyz/install/arduino/1.8.5/arduino-1.8.5-windows.zip) / [mac](https://cloud.yimian.xyz/install/arduino/1.8.5/arduino-1.8.5-macosx.zip))
 
-### 上传错误*avrdude: ser_open(): can't open device*
+### 上传错误`avrdude: ser_open(): can't open device`
 答：请在上方栏**工具**中选择指定**端口**。
 
-### 上传错误*avrdude: stk500_recv(): programmer is not responding*
+### 上传错误`avrdude: stk500_recv(): programmer is not responding`
 答：此错误由先前对端口的非正常操作引起。请尝试**重启系统**或**更换电脑**解决。
 
 ### 数字时钟显示乱码
