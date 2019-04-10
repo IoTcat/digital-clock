@@ -1,7 +1,7 @@
 - 开始使用
   - <li ><a style="color:red" href="#/before">先觉条件</a></li>
-  - [相关资料](/instro)
   - [快速开始](/start)
+  - [电路搭建](/instro)
   - [参数说明](/params)
 
 - 问题排查
