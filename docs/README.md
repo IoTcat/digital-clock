@@ -1,7 +1,7 @@
 # digital-clock
 
 本项目旨在帮助同学们**快速**完成**EEE116**数字时钟的代码开发。
-> 感谢[番茄树](https://tomatotrees.xyz)、晓天等同学对本项目的无私贡献~
+> 感谢[番茄树](https://tomatotrees.xyz)、晓天、[雷大佬](https://github.com/Obsverrr)等同学对本项目的无私贡献~
 
 ## 先觉条件(非常重要！！任何一条不满足你的代码就无法运行)
 !> 推荐使用**电脑**访问本文档。地址：`https://digitalclock.eee.dog`或Google搜索`eee116 digital clock`。
