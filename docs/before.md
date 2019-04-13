@@ -5,7 +5,7 @@
  - 下载并解压代码到本地([代码下载戳这里](https://cloud.yimian.xyz/package/iotcat/digital-clock/digital-clock.zip))
  - **请务必先解压，否则代码无法运行**
  - 请保证包含代码文件的文件夹名称为`digital-clock`
- - [点击这里快速开始](/start)
+ - 然后[点击这里快速开始](/start)
 
 !>以上内容非常重要！任何一条不满足你的代码将无法运行！！！
 
