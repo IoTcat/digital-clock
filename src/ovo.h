@@ -5,7 +5,7 @@
  * @category ovo-arduino
  * @package ovo.cpp
  * @copyright Copyright (c) 2019 EEENeko (https://github.com/eeeneko)
- * @license GNU General Public License 2.0
+ * @license GNU General Public License 3.0
  * @version 0.0.1
  */
 

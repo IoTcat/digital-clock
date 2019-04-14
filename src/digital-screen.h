@@ -5,8 +5,8 @@
  * @category digital-clock
  * @package digital-screen.h
  * @copyright Copyright (c) 2019 iotcat (https://iotcat.me)
- * @license GNU General Public License 2.0
- * @version 0.0.1
+ * @license GNU General Public License 3.0
+ * @version 0.0.2
  */
 
 

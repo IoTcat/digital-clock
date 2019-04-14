@@ -5,8 +5,8 @@
  * @category digital-clock
  * @package digital-clock.ino
  * @copyright Copyright (c) 2019 IoTcat (https://iotcat.me)
- * @license GNU General Public License 2.0
- * @version 0.0.1
+ * @license GNU General Public License 3.0
+ * @version 0.0.2
  */
 
 
@@ -18,6 +18,12 @@
 //去掉下一行的注释以开启debug模式
 //#define DEBUG_MODE
 
+/*** 是否使用备用开关算法 ****/
+
+//!!仅在暂停键不灵敏时考虑本选项!!
+//去掉下一行的注释以使用备用开关算法
+//#define FORCED_SWITCH
+
 
 /*** 定义初始参数 ****/
 
@@ -25,8 +31,11 @@
 #define GROUP_ID 22 //计时器增大到此值将重新从零开始
                     //例如此处我的组号是22
 
-//时钟变换时间间隔 (毫秒)
+//时钟变换时间间隔 (毫秒)::如果组号超过30可考虑调小本值
 #define INTERVAL_TIME 1000 //默认是1秒
+
+//按下开关后冻结时间 (毫秒)::仅在备用开关模式有效
+#define SWI_DELAY_TIME 1200
 
 //pin口 - 接译码器1 (显示个位)
 #define DIG_1_1 9   //A
